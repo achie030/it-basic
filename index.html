@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Achie – Portfolio</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="logo">Achie</a>
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-expanded="false"
+          aria-controls="nav-menu"
+          aria-label="Menu openen"
+        >
+          &#9776;
+        </button>
+
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#over-mij">Over mij</a></li>
+          <li><a href="#vaardigheden">Vaardigheden</a></li>
+          <li><a href="projecten.html">Projecten</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <h1>Hallo, ik ben <span id="typing-text"></span></h1>
+        <p>
+          Welkom bij mijn portfolio. Hier vind je wie ik ben, wat ik kan en
+          welke projecten ik heb gemaakt.
+        </p>
+        <a href="projecten.html" class="btn">Bekijk mijn projecten</a>
+      </section>
+
+      <section class="section" id="over-mij">
+        <h2>Over mij</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+          ad minim veniam, quis nostrud exercitation ullamco laboris.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute
+          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+          fugiat nulla pariatur.
+        </p>
+      </section>
+
+      <section class="section" id="vaardigheden">
+        <h2>Vaardigheden</h2>
+        <div class="skills" id="skills-container"></div>
+      </section>
+
+      <section class="section" id="projecten-overzicht">
+        <h2>Projecten</h2>
+        <p style="text-align: center">
+          Ik heb drie projecten gemaakt. Op de projectenpagina lees je per
+          project de omschrijving en de gebruikte technieken.
+        </p>
+        <p style="text-align: center">
+          <a href="projecten.html" class="btn">Bekijk alle projecten</a>
+        </p>
+      </section>
+
+      <section class="section" id="contact">
+        <h2>Contact</h2>
+
+        <form id="contact-form" novalidate>
+          <label for="naam">Naam</label>
+          <input type="text" id="naam" name="naam" autocomplete="name" />
+
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" autocomplete="email" />
+
+          <label for="bericht">Bericht</label>
+          <textarea id="bericht" name="bericht" rows="5"></textarea>
+
+          <button type="submit" class="btn">Verstuur bericht</button>
+        </form>
+
+        <p class="form-status" id="form-status" role="status"></p>
+
+        <ul class="socials">
+          <li>
+            <a href="https://github.com/[jouw-gebruikersnaam]" target="_blank" rel="noopener">GitHub</a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/[jouw-gebruikersnaam]" target="_blank" rel="noopener">LinkedIn</a>
+          </li>
+          <li>
+            <a href="mailto:[jouw-email@example.com]">E-mail</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Achie. Alle rechten voorbehouden.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
